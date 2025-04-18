@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Holdings</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Pacific Alco <span>Holdings</span></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building The Future</h1>
+                <p>Pacific Holdings is committed to excellence in development, investment, and management across diverse industries.</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="section-subtitle">Our journey and vision</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Pacific Holdings is a premier investment and development company with a diverse portfolio spanning real estate, technology, and sustainable energy projects. Founded in 2005, we have established ourselves as a leader in creating value through strategic investments and innovative development.</p>
+                    <p>Our team comprises industry experts with decades of combined experience, dedicated to delivering exceptional results for our stakeholders and communities. We believe in responsible growth and sustainable practices that benefit both our investors and the world around us.</p>
+                    <p>With a forward-thinking approach and commitment to excellence, Pacific Holdings continues to expand its reach while maintaining the high standards and integrity that have defined our success.</p>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/500/400" alt="Pacific Holdings Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">What we offer to our clients</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">🤖</div> <!-- AI icon -->
+                    <h3 class="service-title">Artificial Intelligence</h3>
+                    <p>We build intelligent systems that enhance business efficiency, automate processes, and drive innovative solutions through machine learning and data science.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">💻</div> <!-- Software Engineering icon -->
+                    <h3 class="service-title">Software Engineering</h3>
+                    <p>Our team designs, develops, and maintains scalable software solutions tailored to meet diverse business needs and deliver seamless user experiences.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">🧑‍💼</div> <!-- Recruitment/Hiring icon -->
+                    <h3 class="service-title">Recruitment Hiring</h3>
+                    <p>We connect top talent with leading companies, streamlining the hiring process to build strong, future-ready teams across industries.</p>
+                </div>
+                
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Our Product</h2>
+            <p class="section-subtitle">Recent work and achievements</p>
+            <div class="projects-grid">
+                <div class="project-item" id="overhopsProject">
+                    <img src="/api/placeholder/600/400" alt="Overhops Project" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">Overhops</h3>
+                        <p>Click to learn more about our exciting new development currently in progress.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with our team</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Pacific Holdings</h3>
+                    <p>Building a better future through strategic investments and innovative development.</p>
+                    
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <p>Pacific Tower, 123 Ocean Drive</p>
+                    <p>San Francisco, CA 94103</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>pacificalcoorganics@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pacific Holdings. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="notification" id="notification">
+        <span class="notification-close" onclick="closeNotification()">&times;</span>
+        <div class="notification-title">Project Update</div>
+        <p>Our exciting new project "Overhops" is currently under development and will be launching soon!</p>
+    </div>
+
+    <script>
+        document.getElementById('overhopsProject').addEventListener('click', function() {
+            showNotification();
+        });
+
+        function showNotification() {
+            const notification = document.getElementById('notification');
+            notification.classList.add('show');
+            
+            setTimeout(() => {
+                closeNotification();
+            }, 5000);
+        }
+
+        function closeNotification() {
+            const notification = document.getElementById('notification');
+            notification.classList.remove('show');
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        
+    </script>
+</body>
+</html>
