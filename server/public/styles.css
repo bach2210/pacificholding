@@ -1,3 +1,4 @@
+/* Original CSS with improved logo styling */
 * {
     margin: 0;
     padding: 0;
@@ -25,13 +26,25 @@ header {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Improved Logo Styling */
 .logo {
-    font-size: 28px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    margin-right: 20px;
 }
 
-.logo span {
-    color: #66ccff;
+.logo img {
+    height: auto; /* Increased from 50px for better visibility */
+    width: 100px;
+    object-fit: contain;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,0.4)); /* Enhanced shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.logo img:hover {
+    filter: drop-shadow(0 4px 8px rgba(102, 204, 255, 0.6)); /* Blue glow on hover */
+    transform: scale(1.05); /* Subtle grow effect */
 }
 
 nav {
@@ -404,4 +417,25 @@ footer {
     .hero p {
         font-size: 18px;
     }
+    
+    /* Responsive logo */
+    .logo img {
+        height: 50px; /* Slightly smaller on mobile */
+    }
+}
+
+/* Add a subtle animation for the logo on page load */
+@keyframes logoFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo img {
+    animation: logoFadeIn 0.8s ease-out forwards;
 }
