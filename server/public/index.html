@@ -29,7 +29,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Building The Future</h1>
-                <p>Pacific Holdings is committed to excellence in development, investment, and management across diverse industries.</p>
+                <p>Pacific Alco Holdings is committed to excellence in development, investment, and management across diverse industries.</p>
                 <a href="#contact" class="btn">Get in Touch</a>
             </div>
         </div>
@@ -42,10 +42,14 @@
             <p class="section-subtitle">Our journey and vision</p>
             <div class="about-content"> 
                 <div class="about-text">
-                    <p>Pacific Alco Holdings is an emerging startup dedicated to revolutionizing the recruitment landscape. Our innovative platform helps individuals find meaningful job opportunities while enabling businesses to discover and recruit top talent more efficiently.</p>
+                    <!-- <p>Pacific Alco Holdings is an emerging startup dedicated to revolutionizing the recruitment landscape. Our innovative platform helps individuals find meaningful job opportunities while enabling businesses to discover and recruit top talent more efficiently.</p>
                     <p>Founded in 2024, we are driven by a passion for improving the hiring process and creating connections between job seekers and employers. Our team consists of forward-thinking professionals with expertise in technology and recruitment, focused on building a seamless and intelligent solution to match the right candidates with the right opportunities.</p>
                     <p>We are committed to using cutting-edge technology to make recruitment smarter, faster, and more inclusive, ensuring that businesses and job seekers can thrive in today’s dynamic job market. At Pacific Alco Holdings, we aim to disrupt traditional hiring practices and deliver exceptional value to both employees and employers.</p>
-                    <p>Through innovation and a client-centric approach, we continue to grow and create value by transforming how people find jobs and hire talent.</p>
+                    <p>Through innovation and a client-centric approach, we continue to grow and create value by transforming how people find jobs and hire talent.</p> -->
+                    
+                    <p>Pacific Alco Holdings, founded in 2024, is a startup aiming to transform the recruitment industry. Our platform connects job seekers with meaningful opportunities and helps businesses efficiently find top talent. </p>
+                    <br></br>
+                    <p>With an AI tech-driven and client-focused approach, the company is committed to making hiring smarter, faster, and more inclusive, challenging traditional recruitment methods to create greater value for both employers and candidates.</p>
 
                 </div>
                 <div class="about-image">
@@ -129,7 +133,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <h3>Pacific Holdings</h3>
+                    <h3>Pacific Alco Holdings</h3>
                     <p>Building a better future through strategic</p>
                     <p>investments and innovative development.</p>
                     
@@ -150,7 +154,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Pacific Holdings. All Rights Reserved.</p>
+                <p>&copy; <span id="year"></span> Pacific Alco Holdings. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -161,7 +165,17 @@
         <p>Our exciting new project "Overhops" is currently under development and will be launching soon!</p>
     </div>
 
+
+
     <script>
+        // get current year
+        function getCurrentYear() {
+            document.getElementById('year').innerHTML = new Date().getFullYear();
+        }
+
+        getCurrentYear();
+
+
         document.getElementById('overhopsProject').addEventListener('click', function() {
             showNotification();
         });
