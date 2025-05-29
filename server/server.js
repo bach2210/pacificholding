@@ -9,7 +9,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-// ✅ API route must come first
 app.post("/api/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
 

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const message = document.getElementById("message").value.trim();
 
       try {
-        const response = await fetch("http://localhost:3000/api/contact", {
+        const response = await fetch("https://pacificalcoholdings.com/api/contact", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
